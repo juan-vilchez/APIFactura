@@ -13,5 +13,6 @@ namespace APIFactura.Models
         public string Dni { get; set; }
         public int Phone { get; set; }
         public string Address { get; set; }
+        public virtual ICollection<Invoice> Invoices { get; set; }
     }
 }

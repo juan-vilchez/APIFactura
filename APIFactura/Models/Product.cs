@@ -12,6 +12,7 @@ namespace APIFactura.Models
         public decimal Price { get; set; }
         public int Stock { get; set; }
         public string Brand { get; set; }
+        public virtual ICollection<InvoiceDetail> InvoiceDetails { get; set; }
 
     }
 }
